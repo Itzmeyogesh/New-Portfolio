@@ -10,7 +10,8 @@ import Skills from './Pages/Skills';
 
 function App() {
   return (
-    <>
+    <div className="bg-vibrant min-h-screen">
+  
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -20,7 +21,8 @@ function App() {
         <Route path="/Experience" element={<Experience />} />
         <Route path="/Skills" element={<Skills />} />
       </Routes>
-    </>
+      </div>
+    
   );
 }
 

@@ -22,7 +22,11 @@ const About = () => {
 
       {/* Resume Button */}
       <a
+<<<<<<< HEAD
         href="/Swati_Gadekar_Resume.pdf"
+=======
+        href="/public/Swati Gadekar Cv (6).pdf"
+>>>>>>> 6b3a961 (Initial commit with updated React + Vite + Tailwind portfolio)
         target="_blank"
         rel="noopener noreferrer"
         className="inline-block mt-6 px-6 py-3 bg-white text-indigo-600 font-semibold rounded-lg shadow-md hover:bg-indigo-100 transition duration-300"
