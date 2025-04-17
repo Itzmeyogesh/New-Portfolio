@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.text-shadow-lg {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
 /* Custom animated gradient background */
 .bg-vibrant {
   background: linear-gradient(135deg, #667eea, #764ba2, #ff758c);
@@ -10,17 +14,6 @@
   min-height: 100vh;
 }
 
-<<<<<<< HEAD
-/* src/index.css or src/assets/background.css */
-.bg-vibrant {
-  background: linear-gradient(135deg, #667eea, #764ba2, #ff758c);
-  background-size: 200% 200%;
-  animation: gradientMove 6s ease infinite;
-  min-height: 100vh;
-}
-
-=======
->>>>>>> 6b3a961 (Initial commit with updated React + Vite + Tailwind portfolio)
 @keyframes gradientMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import profileImg from '../assets/Swati.jpg'; // Make sure this path is correct
+import profileImg from '../assets/Swati.jpg'; // Ensure this path is correct
 
 const Home = () => {
   return (
@@ -11,10 +11,10 @@ const Home = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 text-shadow-lg">
           Hi, I'm <span className="text-yellow-300">Swati Gadekar</span>
         </h1>
-        <p className="text-lg md:text-xl mb-6">
+        <p className="text-lg md:text-xl mb-6 text-shadow-lg">
           I'm a passionate <span className="text-pink-300 font-semibold">Data Analyst</span> who transforms raw data into meaningful insights.
         </p>
         <a
