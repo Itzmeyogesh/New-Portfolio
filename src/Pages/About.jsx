@@ -1,30 +1,35 @@
 // src/pages/About.jsx
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="p-6 max-w-4xl mx-auto text-gray-800">
-      <motion.h1 className="text-3xl font-bold mb-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-        Swati Gadekar
-      </motion.h1>
-      <p>Pune, Maharashtra</p>
-      <p className="text-sm text-gray-600">📧 gadekarswati502@gmail.com | 📞 +91 7499650281</p>
-      <p className="text-sm text-blue-600">
-        <a href="https://linkedin.com/in/swatigadekar09" target="_blank" rel="noopener noreferrer">LinkedIn</a> |{' '}
-        <a href="https://github.com/SWATIG01" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <motion.div
+      className="p-6 max-w-4xl mx-auto text-white"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
+      <h2 className="text-4xl font-bold mb-6">About Me</h2>
+      <p className="mb-4 leading-relaxed">
+        I'm Swati Gadekar, a driven Data Analyst with internship experience at Code Spyder Technologies. 
+        Proficient in Python, SQL, Power BI, and data visualization, I'm passionate about transforming complex 
+        data into actionable insights using feature engineering and predictive modeling.
+      </p>
+      <p className="mb-4 leading-relaxed">
+        I’ve worked on real-world projects like house price prediction, wine quality prediction, and Amazon 
+        sentiment analysis. Currently pursuing my MCA, I’m enthusiastic about leveraging data for impactful decisions.
       </p>
 
-      <motion.div className="mt-6" initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }}>
-        <h2 className="text-2xl font-semibold mb-2">Summary</h2>
-        <p className="text-justify">
-          Driven Data Analyst with internship experience at Code Spyder Technologies. Proficient in Python,
-          SQL, and data visualization tools like Power BI and Matplotlib. Specialized in transforming complex
-          datasets into actionable insights using feature engineering and predictive modeling. Successfully
-          deployed real-world applications including house price prediction and sentiment analysis. Passionate
-          about leveraging data for impactful decisions.
-        </p>
-      </motion.div>
-    </div>
+      {/* Resume Button */}
+      <a
+        href="/Swati_Gadekar_Resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block mt-6 px-6 py-3 bg-white text-indigo-600 font-semibold rounded-lg shadow-md hover:bg-indigo-100 transition duration-300"
+      >
+        View Resume
+      </a>
+    </motion.div>
   );
 };
 
