@@ -10,6 +10,21 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* src/index.css or src/assets/background.css */
+.bg-vibrant {
+  background: linear-gradient(135deg, #667eea, #764ba2, #ff758c);
+  background-size: 200% 200%;
+  animation: gradientMove 6s ease infinite;
+  min-height: 100vh;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
 /* Custom CSS below - Tailwind can coexist with this */
 
 :root {
