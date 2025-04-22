@@ -1,11 +1,13 @@
-// tailwind.config.js
-module.exports = {
-  content: [
-    './index.html', // For Tailwind to scan the HTML file
-    './src/**/*.{js,jsx,ts,tsx}', // For Tailwind to scan JS, JSX, TS, and TSX files inside src folder
-  ],
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./Public/index.html", "./src/**/*.{js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#0ea5e9",
+        background: "#0f172a",
+      },
+    },
   },
   plugins: [],
 }
